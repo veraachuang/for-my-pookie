@@ -23,6 +23,7 @@ const FlappyBirdGame: React.FC<FlappyBirdGameProps> = ({ onComplete, onPlayMusic
     let animationFrameId: number
     let bird = { x: 150, y: canvas.height / 2, velocity: 0, size: 30 }
     let obstacles: { x: number; y: number; height: number; passed: boolean }[] = []
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     let totalDistance = 0
     const gravity = 0.4
     const jumpStrength = -8

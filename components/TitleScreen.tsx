@@ -10,7 +10,7 @@ const TitleScreen: React.FC<TitleScreenProps> = ({ onStart, dancingScript }) => 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-white">
       <h1 className={`text-5xl mb-8 text-orange-300 ${dancingScript.className}`}>
-        Happy 5 Months & Belated Valentine's Day!
+        Happy 5 Months & Belated Valentine&apos;s Day!
       </h1>
       <button
         onClick={onStart}

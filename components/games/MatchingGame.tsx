@@ -76,7 +76,7 @@ const MatchingGame: React.FC<MatchingGameProps> = ({ onComplete, onPlayMusic }) 
 
   return (
     <div className="text-center h-screen flex flex-col justify-center items-center overflow-hidden p-0 m-0">
-      <h3 className="text-xl text-orange-200">Guess which one's which!</h3>
+      <h3 className="text-xl text-orange-200">Guess which one&apos;s which!</h3>
       <div className="w-full max-w-screen-lg flex-grow overflow-auto">
         <div className="grid grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-4 w-full max-w-screen-lg center">
           {cards.map((card, index) => (

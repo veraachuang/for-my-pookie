@@ -12,18 +12,18 @@ const LoveLetter: React.FC<LoveLetterProps> = ({ dancingScript }) => {
         <div className={`text-orange-800 ${dancingScript.className}`}>
           <h2 className="text-4xl mb-6 text-center">My BUBBY,</h2>
           <p className="text-xl mb-4">
-            Happy 5 months and belated Valentine's Day! Sorry this came a little late, don't worry I'm not getting lazy yet
+            Happy 5 months and belated Valentine&apos;s Day! Sorry this came a little late, don&apos;t worry I&apos;m not getting lazy yet
           </p>
           <p className="text-xl mb-4">
-            Just like the games you've played, our relationship is an adventure. We catch each other when we fall, we
+            Just like the games you&apos;ve played, our relationship is an adventure. We catch each other when we fall, we
             match perfectly, and together, we can overcome any obstacle that comes our way. (Chat wrote this)
           </p>
           <p className="text-xl mb-4">
-            Thank you for being my partner, my best friend, and my greatest support. Since we're not going to Japan, I thought I'd bring cherry blossoms to you. 
-            I'm so so excited for our adventures in Taiwan. I love you best friend.
+            Thank you for being my partner, my best friend, and my greatest support. Since we&apos;re not going to Japan, I thought I&apos;d bring cherry blossoms to you. 
+            I&apos;m so so excited for our adventures in Taiwan. I love you best friend.
           </p>
           <p className="text-xl text-right">
-            I can't wait to see you again,
+            I can&apos;t wait to see you again,
             <br />
             Vera
           </p>
