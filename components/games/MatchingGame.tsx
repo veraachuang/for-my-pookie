@@ -23,7 +23,7 @@ const onePieceCharacters = [
 const MatchingGame: React.FC<MatchingGameProps> = ({ onComplete, onPlayMusic }) => {
   const [cards, setCards] = useState<{ name: string; image: string }[]>([])
   const [flipped, setFlipped] = useState<boolean[]>([])
-  const [matched, setMatched] = useState<boolean[][]>([])
+  const [matched, setMatched] = useState<boolean[]>([])
   const [canFlip, setCanFlip] = useState(true)
   const [showCongrats, setShowCongrats] = useState(false)
 
@@ -52,7 +52,7 @@ const MatchingGame: React.FC<MatchingGameProps> = ({ onComplete, onPlayMusic }) 
     newFlipped[index] = true
     setFlipped(newFlipped)
 
-    const flippedCards = newFlipped.reduce((acc, curr, idx) => (curr && !matched[idx] ? [...acc, idx] : acc), [])
+    const flippedCards = newFlipped.reduce<number[]>((acc, curr, idx) => (curr && !matched[idx] ? [...acc, idx] : acc), [])
 
     if (flippedCards.length === 2) {
       setCanFlip(false)
@@ -106,7 +106,7 @@ const MatchingGame: React.FC<MatchingGameProps> = ({ onComplete, onPlayMusic }) 
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
           <div className="text-white text-2xl bg-orange-500 p-8 rounded-lg">
             <p className="mb-4">Congrats!</p>
-            <img src="/cat-meme.jpg" alt="Congratulations Cat Meme" className="max-w-sm mx-auto rounded-lg" />
+            <Image src="/cat-meme.jpg" alt="Congratulations Cat Meme" className="max-w-sm mx-auto rounded-lg" />
           </div>
         </div>
       )}
